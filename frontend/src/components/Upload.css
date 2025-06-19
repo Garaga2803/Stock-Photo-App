@@ -1,0 +1,132 @@
+/* Container */
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #eef2f7, #dfe9f3);
+  min-height: 100vh;
+  box-sizing: border-box;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Box */
+.upload-box {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.upload-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.upload-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Inputs */
+.file-input,
+.email-input,
+.price-input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 15px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.file-input:hover,
+.email-input:hover,
+.price-input:hover,
+.file-input:focus,
+.email-input:focus,
+.price-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.15);
+  outline: none;
+}
+
+/* Premium Toggle */
+.premium-toggle {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.premium-toggle input[type="checkbox"] {
+  transform: scale(1.2);
+  accent-color: #007bff;
+}
+
+/* Upload Button */
+.upload-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.upload-button:hover {
+  background: linear-gradient(to right, #0056b3, #004a99);
+  transform: scale(1.02);
+}
+
+/* File Preview */
+.file-preview {
+  margin-bottom: 20px;
+  background-color: #f1f3f6;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px dashed #ccc;
+  font-size: 14px;
+  color: #555;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.file-preview ul {
+  list-style: disc;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.file-preview li {
+  margin-bottom: 6px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

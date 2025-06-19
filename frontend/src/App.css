@@ -1,0 +1,98 @@
+/* General layout */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  background-color: white;
+  min-height: 100vh;
+}
+
+/* Navbar layout */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-weight: bold;
+}
+
+/* Grouping links */
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Link styles */
+.nav-bar a {
+  color: #555; /* softer gray */
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: #f7f7f7; /* light gray background */
+  transition: all 0.3s ease;
+}
+
+.nav-bar a:hover {
+  background-color: #e0e0e0; /* darker on hover */
+  color: #007bff;
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #03080e;
+  letter-spacing: 1px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+/* Logout button */
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+.nav-bar a {
+  background-color: #e0e0e0; /* 🔷 Light gray background */
+  color: #333;               /* 🔷 Darker text */
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-bar a:hover {
+  background-color: #cfcfcf; /* 🔷 Darker gray on hover */
+  color: #000;
+}
